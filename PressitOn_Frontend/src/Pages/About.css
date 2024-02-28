@@ -1,0 +1,41 @@
+.Accounttypes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+
+
+
+}
+
+.bttn{
+    height: 20vh;
+    width: 30%;
+    background-color: black;
+    color: white;
+    font-size: 100%;
+}
+.bttn:hover{
+    background:white;
+    color: #000;
+    border: 2px solid black;
+    transition: all ease-in 0.5ms;
+}
+
+.ancher{
+    text-decoration: none;
+    color:white;
+    height: 19vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.ancher:hover{
+    background:white;
+    color: #000;
+    transition: all ease-in 0.5ms;
+}
