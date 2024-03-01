@@ -1,52 +1,51 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./Pages/login.tsx";
-import Registration from "./Pages/registration.tsx";
-import Navbar from "./components/navbar.tsx";
-import Footer from "./components/Footer.tsx";
-import Dashboard from "./Pages/dashboard.tsx";
-import About from "./Pages/About.tsx";
+import './App.css'
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import Login from "./pages/login.tsx";
+import Dashboard from "./pages/dashboard.tsx";
+import Shop from "./pages/shop.tsx";
+import AdminDashboard from "./pages/admindashboard.tsx";
+import Review from "./pages/review.tsx";
+import Register from "./pages/registration.tsx";
+const router = createBrowserRouter(
+    [
+        {
+            path:"/",
+            element : <Login />
+        },
+        {
+            path:"/register",
+            element : <Register />
+        },
+
+        {
+            path:"/dashboard",
+            element : <Dashboard />
+        },
+        {
+            path:"/shop",
+            element : <Shop />
+        },
+        {
+            path:"/admin",
+            element : <AdminDashboard/>
+        },
+
+        {
+            path:"/review/:productId",
+            element : <Review/>
+        },
 
 
 
 
-
-const router = createBrowserRouter([
-
-    {
-        path: "/",
-        element: <Login />
-    },
-    {
-        path: "/register",
-        element: <Registration/>
-    },
-    {
-        path: "/navbar",
-        element: <Navbar/>
-    },
-    {
-        path: "/footer",
-        element: <Footer/>
-    },
-    {
-        path: "/dashboard",
-        element: <Dashboard/>
-    },
-    {
-        path: "/about",
-        element: <About/>
-    },
-
-
-
-]);
-
+    ]
+)
 function App() {
+
     return (
         <>
-
-                <RouterProvider router={router}></RouterProvider>
+            <RouterProvider router={router}></RouterProvider>
         </>
-    );
+    )
 }
-export default App;
+export default App

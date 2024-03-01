@@ -1,0 +1,32 @@
+.shopping-cart {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.shopping-cart h2 {
+    color: #343a40;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.shopping-cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shopping-cart li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ced4da;
+    padding-bottom: 5px;
+}
+
+.shopping-cart li:last-child {
+    border-bottom: none;
+}
+
+.shopping-cart li span {
+    font-weight: bold;
+}

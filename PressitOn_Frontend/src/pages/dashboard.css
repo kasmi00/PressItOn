@@ -1,0 +1,81 @@
+
+
+.dashboard {
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.stats {
+    display: flex;
+}
+
+.stat {
+    margin-right: 20px;
+}
+
+.stat p {
+    margin: 5px 0;
+}
+
+.recent-orders ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.recent-orders ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.recent-orders ul li p {
+    margin: 5px 0;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
