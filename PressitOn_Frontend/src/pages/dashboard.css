@@ -1,5 +1,4 @@
-
-
+/* Main CSS */
 .dashboard {
     margin-top: 100px;
     font-family: Arial, sans-serif;
@@ -9,6 +8,7 @@
 }
 
 header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
@@ -36,6 +36,7 @@ nav ul li button {
 
 main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -78,4 +79,61 @@ h2 {
 footer {
     margin-top: 20px;
     text-align: center;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .stat {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dashboard {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    nav ul li button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        margin-bottom: 10px;
+    }
+
+    .stat p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+    }
 }
