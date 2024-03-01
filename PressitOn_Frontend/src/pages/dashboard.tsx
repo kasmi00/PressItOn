@@ -104,7 +104,7 @@ const Dashboard: React.FC = () => {
             </header>
 
             <section className="hero-slider">
-                <h1>Browse the finest watches</h1>
+                <h1>Browse the finest Nail product</h1>
                 <a href="/shop" className="primary-btn">See More</a>
             </section>
 
